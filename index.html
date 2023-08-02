@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="converter-box">
+      <h1>Unit Converter</h1>
+      <input type="number" id="input-value" placeholder="Enter the value to be converted">
+      <div class="unit-row">
+        <div class="unit-container">
+          <label for="from-unit">From Unit:</label>
+          <select id="from-unit">
+            <option value="" selected disabled>Choose unit from</option>
+            <optgroup label="Length">
+              <option value="Millimeter">Millimeter</option>
+              <option value="Centimeter">Centimeter</option>
+              <option value="Foot">Foot</option>
+              <option value="Yard">Yard</option>
+              <option value="Meter">Meter</option>
+              <option value="Kilometer">Kilometer</option>
+              <option value="Miles">Miles</option>
+            </optgroup>
+            <optgroup label="Area">
+              <option value="Square-Foot">Square-Foot</option>
+              <option value="Square-Yard">Square-Yard</option>
+              <option value="Square-Meter">Square-Meter</option>
+              <option value="Square-Kilometer">Square-Kilometer</option>
+              <option value="Hectare">Hectare</option>
+              <option value="Acre">Acre</option>
+            </optgroup>
+            <optgroup label="Volume">
+              <option value="Milliliter">Milliliter</option>
+              <option value="Centiliter">Centiliter</option>
+              <option value="Liter">Liter</option>
+              <option value="Gallon">Gallon</option>
+              <option value="Cubic-Tons">Cubic-Tons</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="unit-container">
+          <label for="to-unit">To Unit:</label>
+          <select id="to-unit">
+          </select>
+        </div>
+      </div>
+      <button onclick="convert()">Convert</button>
+      <div id="result"></div>
+    </div>
+  </div>
+  <script src="script/main.js"></script>
+</body>
+
+</html>
